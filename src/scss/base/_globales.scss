@@ -1,0 +1,66 @@
+@use 'variables' as v;
+
+
+html {
+   font-size: 62.5%; //Esto sirve para que 1rem sea igual a 10 pixeles 1rem = 10px
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+body {
+   font-family: v.$fuente_principal;
+   font-size: 1.6rem; // 16 px
+}
+
+p {
+   font-size: 2rem;
+   color: v.$negro;
+   line-height: 1.5; // interlineado
+}
+
+.contenedor {
+   width: 95%; // Que no tome todo el ancho de pantalla
+   max-width: 120rem;
+   margin: 0 auto;
+}
+
+a {
+   text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+   margin: 0 0 5rem 0; // 5rem hacia abajo 0 arriba 0 derecha 5 abajo y 0 
+}
+
+h1 {
+   font-size: 4rem;
+}
+
+h2 {
+   font-size: 3.6rem;
+}
+
+h3 {
+   font-size: 3rem;
+}
+img{
+   max-width: 100%;
+   width: 100%; // para que se acomode al poner en la etiqueta el width y el height
+   height: auto;
+   display: block;
+}
+
+//  .prueba {
+//     @include m.heading(v.$amarillo,true);
+//  }
+
+//  .texto {
+//     @include m.heading;
+//  }

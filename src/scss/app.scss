@@ -1,0 +1,6 @@
+// @import  'base/variable' ; //forma anterior
+// @import  'contenido/contenido.scss' ;
+
+@use 'base'; // use lo va a compilar -- si importa el orden de los archivos
+@use 'layout' // se agrega cada carpeta que se necesita
+ 

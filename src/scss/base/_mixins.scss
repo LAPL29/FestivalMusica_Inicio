@@ -1,0 +1,52 @@
+@use 'variables' as v;
+// @mixin heading($color: blue, $border-radius: false) { // si no esta presente un colo por default pa ser azul
+//     font-size: 2.4rem;
+//     letter-spacing: 1px;
+//     text-transform: uppercase;
+//     color: $color;
+//     background-color: black;
+//     @if $border-radius{
+//         border-radius: 1rem;
+//     }
+// }
+
+@mixin telefono{
+    @media (min-width: v.$telefono){
+        @content; //para que no marque error
+        // text-transform: uppercase;
+        // font-weight: bold;
+
+    }
+}
+
+@mixin tablet{
+    @media (min-width: v.$tablet){
+        @content; //para que no marque error
+        // text-transform: uppercase;
+        // font-weight: bold;
+    }
+}
+
+@mixin desktop{
+    @media (min-width: v.$desktop){
+        @content; 
+      
+    }
+}
+
+@mixin desktopXL{
+    @media (min-width: v.$desktopXL){
+        @content; 
+      
+    }
+}
+@mixin grid($columnas, $espaciado){ // un poco mas inteligente
+    display: grid;
+    grid-template-columns: repeat($columnas,1fr);
+    gap: $espaciado;
+}
+@mixin resetear-lista{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
