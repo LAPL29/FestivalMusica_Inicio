@@ -44,144 +44,218 @@
     <!-- <h1 class="prueba"> Probando mixins</h1>
     <p class="texto">Texto de prueba</p> -->
 
+
+    <section class="contenedor sobre-festival">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg"
+                    alt="Imagen Vocalista">
+            </picture>
+
+
+
+        </div>
+        <div class="contenido-festival">
+            <h2>Rock & EDM Festival</h2>
+            <p class="fecha">Octubre 2023, Mazatlán, Sinaloa</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptates veniam eveniet est odio! Enim
+                commodi voluptas totam, ipsum fugit exercitationem soluta cum ipsam placeat odit saepe dicta sit
+                provident!
+            </p>
+
+        </div>
+    </section>
+
+    <section class="lineup">
+        <h3>Line up</h3>
+        <p class="dia">Viernes 14</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Metallica</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Pearl Jam</span>
+                    </li>
+                    <li>
+                        20:00 | <span>KoRn</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Muse</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Breaking Benjamin</span>
+                    </li>
+                    <li>
+                        17:00 | <span>30 Seconds to Mars</span>
+                    </li>
+
+
+                </ul>
+            </div> <!--Aqui termina escenario-->
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Deadmau5</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Tïesto</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Hardwell</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Dash Berlin</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Fedde Legrand</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Audien</span>
+                    </li>
+
+                </ul>
+            </div> <!--Aqui termina escenario-->
+
+        </div><!--Aqui termina escenarios-contenedor-->
+
+
+        <p class="dia">Sabado 22</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Red Hot Chili Peppers</span>
+                    </li>
+                    <li>
+                        22:00 | <span>The Killers</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Deftones</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Limp Bizkit</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Papa Roach</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Lamb of God</span>
+                    </li>
+
+
+                </ul>
+            </div> <!--Aqui termina escenario-->
+
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Paul Van Dyk</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Armin Van Buuren</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Above & Beyond</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Eric Prdyz</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Ferry Corsten</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Vini Vici</span>
+                    </li>
+                </ul>
+            </div> <!--Aqui termina escenario-->
+
+
+        </div><!--Aqui termina escenarios-contenedor-->
+
+    </section>
+
+    <section class="galeria contenedor">
+        <h3>Galería</h3>
+
+        <ul class="galeria-imagenes"></ul>
+
+    </section>
+
+    <section class="boletos bg-verde">
+
+        <h3>Boletos</h3>
+        <div class="contenedor contenedor-boletos">
+
+            <div class="basico pase">
+                <p>Pase 1 dia</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>
+                            Acceso a ambos escenarios
+                        </li>
+                        <li>
+                            Comida y Bebida
+                        </li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$100</p>
+
+                </footer>
+            </div>
+
+            <div class="premium pase">
+                <p>Pase 2 dia</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>
+                            Acceso a ambos escenarios
+                        </li>
+                        <li>
+                            Comida y Bebida
+                        </li>
+                        <li>
+                            Camisa del Evento
+                        </li>
+                        <li>
+                            Acceso VIP
+                        </li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$180</p>
+
+                </footer>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="site-footer"> 
+        <p>Rock & EDM Festival. Todos los Derechos Reservados Por Luis Angel Peraza Lugo</p>
+    </footer>
+
+
+    <script src="build/js/app.js"></script>
+
 </body>
-<section class="contenedor sobre-festival">
-    <div class="imagen">
-        <picture>
-            <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
-            <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
-            <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg" alt="Imagen Vocalista">
-        </picture>
 
-
-
-    </div>
-    <div class="contenido-festival">
-        <h2>Rock & EDM Festival</h2>
-        <p class="fecha">Octubre 2023, Mazatlán, Sinaloa</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptates veniam eveniet est odio! Enim
-            commodi voluptas totam, ipsum fugit exercitationem soluta cum ipsam placeat odit saepe dicta sit provident!
-        </p>
-
-    </div>
-</section>
-
-<section class="lineup">
-    <h3>Line up</h3>
-    <p class="dia">Viernes 14</p>
-    <div class="escenarios-contenedor contenedor">
-        <div class="escenario rock bg-amarillo">
-            <p class="nombre-escenario">Escenario Rock</p>
-            <ul class="calendario">
-                <li>
-                    24:00 | <span>Metallica</span>
-                </li>
-                <li>
-                    22:00 | <span>Pearl Jam</span>
-                </li>
-                <li>
-                    20:00 | <span>KoRn</span>
-                </li>
-                <li>
-                    19:00 | <span>Muse</span>
-                </li>
-                <li>
-                    18:00 | <span>Breaking Benjamin</span>
-                </li>
-                <li>
-                    17:00 | <span>30 Seconds to Mars</span>
-                </li>
-
-
-            </ul>
-        </div> <!--Aqui termina escenario-->
-        <div class="escenario edm bg-verde">
-            <p class="nombre-escenario">Escenario EDM</p>
-            <ul class="calendario">
-                <li>
-                    24:00 | <span>Deadmau5</span>
-                </li>
-                <li>
-                    22:00 | <span>Tïesto</span>
-                </li>
-                <li>
-                    20:00 | <span>Hardwell</span>
-                </li>
-                <li>
-                    19:00 | <span>Dash Berlin</span>
-                </li>
-
-                <li>
-                    18:00 | <span>Fedde Legrand</span>
-                </li>
-                <li>
-                    17:00 | <span>Audien</span>
-                </li>
-
-            </ul>
-        </div> <!--Aqui termina escenario-->
-
-    </div><!--Aqui termina escenarios-contenedor-->
-
-
-    <p class="dia">Sabado 22</p>
-    <div class="escenarios-contenedor contenedor">
-        <div class="escenario rock bg-verde">
-            <p class="nombre-escenario">Escenario Rock</p>
-            <ul class="calendario">
-                <li>
-                    24:00 | <span>Red Hot Chili Peppers</span>
-                </li>
-                <li>
-                    22:00 | <span>The Killers</span>
-                </li>
-                <li>
-                    20:00 | <span>Deftones</span>
-                </li>
-                <li>
-                    19:00 | <span>Limp Bizkit</span>
-                </li>
-
-                <li>
-                    18:00 | <span>Papa Roach</span>
-                </li>
-                <li>
-                    17:00 | <span>Lamb of God</span>
-                </li>
-
-
-            </ul>
-        </div> <!--Aqui termina escenario-->
-
-        <div class="escenario edm bg-amarillo">
-            <p class="nombre-escenario">Escenario EDM</p>
-            <ul class="calendario">
-                <li>
-                    24:00 | <span>Paul Van Dyk</span>
-                </li>
-                <li>
-                    22:00 | <span>Armin Van Buuren</span>
-                </li>
-                <li>
-                    20:00 | <span>Above & Beyond</span>
-                </li>
-                <li>
-                    19:00 | <span>Eric Prdyz</span>
-                </li>
-
-                <li>
-                    18:00 | <span>Ferry Corsten</span>
-                </li>
-                <li>
-                    17:00 | <span>Vini Vici</span>
-                </li>
-            </ul>
-        </div> <!--Aqui termina escenario-->
-
-
-    </div><!--Aqui termina escenarios-contenedor-->
-    <br>
-
-</section>
 
 </html>
